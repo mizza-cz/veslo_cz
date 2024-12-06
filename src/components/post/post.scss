@@ -20,6 +20,7 @@
   }
   &__content {
     padding: 24px 24px 32px;
+    background-color: var(--color-light);
     @include media-breakpoint-down(lg) {
       padding-bottom: 24px;
     }

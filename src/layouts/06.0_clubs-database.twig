@@ -1,0 +1,27 @@
+{% extends "@components/base/base.twig" %} {% set title = "06.0_clubs-database"
+%} {% block main %}
+<div class="base">
+  {% include "@components/header/header-default.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    <section class="static-section">
+      <div class="container">
+        <h1 class="h2 fw-light mb-lg-4 mb-3">Databáze klubů</h1>
+        <div class="filterBox">
+          <form class="filterBox__search">
+            <button>
+              <img src="images/ico/search.svg" alt="search" />
+            </button>
+            <input
+              type="text"
+              placeholder="Vyhledejte podle kraje, reference nebo názvu"
+            />
+          </form>
+        </div>
+        {% include "@components/clubsDatabase/clubsDatabase.twig" %}
+      </div>
+    </section>
+  </main>
+  {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}

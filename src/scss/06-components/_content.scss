@@ -74,3 +74,13 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+.static-section {
+  padding-top: 64px;
+  background: rgba(242, 245, 252, 1);
+  padding-bottom: 104px;
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 64px;
+    padding-top: 40px;
+  }
+}

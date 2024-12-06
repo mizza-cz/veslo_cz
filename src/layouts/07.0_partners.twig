@@ -1,0 +1,17 @@
+{% extends "@components/base/base.twig" %} {% set title = "07.0_partners" %} {%
+block main %}
+<div class="base">
+  {% include "@components/header/header-default.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    <section class="static-section">
+      <div class="container">
+        <h1 class="h2 fw-light mb-lg-4 mb-3">Partneři</h1>
+
+        {% include "@components/partners-section/partners-section.twig" %}
+      </div>
+    </section>
+  </main>
+  {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}

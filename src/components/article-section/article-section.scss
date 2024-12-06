@@ -1,4 +1,8 @@
 .article-section {
+  background: rgba(242, 245, 252, 1);
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 64px;
+  }
   &__wrapper {
     display: flex;
     @include media-breakpoint-down(lg) {
@@ -28,8 +32,6 @@
       object-fit: cover;
     }
   }
- 
- 
 }
 
 .photosBox {
