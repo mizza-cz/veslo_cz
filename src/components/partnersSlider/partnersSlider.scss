@@ -1,0 +1,32 @@
+.partnersSlider {
+  .slick-list {
+    margin: 0 -6px;
+  }
+
+  &__inner {
+    margin-top: -6px;
+    margin-bottom: -12px;
+  }
+  &__item {
+    padding: 6px 12px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
+  &__link {
+    box-shadow: 4px 2px 8px 0px rgba(0, 0, 0, 0.12);
+
+    border-radius: 12px;
+    width: 100%;
+    aspect-ratio: 184/160;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 80%;
+      width: 80%;
+      object-fit: contain;
+    }
+  }
+}

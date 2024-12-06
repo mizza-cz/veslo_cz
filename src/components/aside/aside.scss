@@ -1,0 +1,29 @@
+.aside {
+  padding-left: 64px;
+  border-left: 1px solid var(--color-dark-12);
+  max-width: 352px;
+  width: 100%;
+  flex: 1;
+  height: fit-content;
+  margin-left: 64px;
+  @include media-breakpoint-only(xl) {
+    margin-left: 40px;
+    padding-left: 40px;
+  }
+  @include media-breakpoint-only(lg) {
+    margin-left: 40px;
+    padding-left: 40px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-left: 0;
+    margin-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--color-dark-12);
+    padding-top: 40px;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  &__news li + li {
+    margin-top: 24px;
+  }
+}

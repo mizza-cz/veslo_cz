@@ -1,0 +1,54 @@
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img class="d-block d-sm-none" src="images/ico/logo.svg" alt="logo" />
+        <img
+          class="d-none d-sm-block"
+          src="images/ico/logo-full.svg"
+          alt="logo"
+        />
+      </a>
+      <div class="header__row">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a href="#">O veslování</a>
+            </li>
+            <li>
+              <a href="#">Závody</a>
+            </li>
+            <li>
+              <a href="#">Fotogalerie</a>
+            </li>
+            <li>
+              <a href="#">ČVS</a>
+            </li>
+            <li>
+              <a href="#">Trénink</a>
+            </li>
+            <li>
+              <a href="#">Mládež</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="c-header__opener js-header__opener" type="button">
+          <span></span>
+        </button>
+        <ul class="header__social">
+          <li>
+            <a href="#" class="header__social-item">
+              {% include "@images/insta.svg" %}
+            </a>
+          </li>
+          <li>
+            <a href="#" class="header__social-item">
+              {% include "@images/fb.svg" %}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  {% include "@components/menu/menu.twig" %}
+</header>

@@ -1,0 +1,221 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"05.0_sport-detail-rowing" %} {% block main %}
+<div class="base base-rowing">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img class="d-block d-sm-none" src="images/ico/logo.svg" alt="logo" />
+          <img
+            class="d-none d-sm-block"
+            src="images/ico/logo-full.svg"
+            alt="logo"
+          />
+        </a>
+        <div class="header__row">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li>
+                <a href="#">O Halovém veslování</a>
+              </li>
+              <li>
+                <a href="#">Závody</a>
+              </li>
+              <li>
+                <a href="#">Fotogalerie</a>
+              </li>
+              <li>
+                <a href="#">osobnosti</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="c-header__opener js-header__opener" type="button">
+            <span></span>
+          </button>
+          <ul class="header__social">
+            <li>
+              <a href="#" class="header__social-item">
+                {% include "@images/insta.svg" %}
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__social-item">
+                {% include "@images/fb.svg" %}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% include "@components/menu/menu.twig" %}
+  </header>
+
+  <main class="main" aria-label="Hlavní obsah">
+    <section class="topstory-section mb-7">
+      <div class="js-topstory">
+        <a href="#" class="topstory-section__item">
+          <img src="images/content/hero.png" alt="topstory" loading="lazy" />
+          <div class="topstory-section__box">
+            <h2 class="h1">Beachsprint</h2>
+          </div>
+        </a>
+        <a href="#" class="topstory-section__item">
+          <img src="images/content/hero.png" alt="topstory" loading="lazy" />
+          <div class="topstory-section__box">
+            <h1 class="h1">Síla, vůle, přátelství...</h1>
+          </div>
+        </a>
+        <a href="#" class="topstory-section__item">
+          <img
+            src="images/content/topAritcle.png"
+            alt="topstory"
+            loading="lazy"
+          />
+          <div class="topstory-section__box">
+            <h2 class="h1">Všechny medaile MČR ve sprintu jsou předány</h2>
+          </div>
+        </a>
+
+        <a href="#" class="topstory-section__item">
+          <img src="images/content/hero.png" alt="topstory" loading="lazy" />
+          <div class="topstory-section__box">
+            <h2 class="h1">112. PRIMÁTORKY</h2>
+          </div>
+        </a>
+        <a href="#" class="topstory-section__item">
+          <img
+            src="images/content/topAritcle.png"
+            alt="topstory"
+            loading="lazy"
+          />
+          <div class="topstory-section__box">
+            <h2 class="h1">Halové veslování</h2>
+          </div>
+        </a>
+      </div>
+    </section>
+    <div class="mb-9 posts">
+      <div class="container">
+        <h3 class="h2 text-center mb-lg-4 mb-3 fw-light">Články</h3>
+        <div class="row g-lg-4 g-3 mb-4">
+          <div class="col-lg-3 col-sm-6">
+            <a href="#" class="post">
+              <div class="post__img">
+                <img
+                  src=" images/content/post-2.png"
+                  loading="lazy"
+                  alt="post-1"
+                />
+              </div>
+              <div class="post__content">
+                <div class="mb-4 tags">
+                  <div class="tag tag-red">Beach</div>
+                  <ul class="tags__list">
+                    <li>10. 10. 2024</li>
+                  </ul>
+                </div>
+                <h4 class="h3">MČR družstev má své vítěze</h4>
+                <p>
+                  Minulý týden jsme na našich stránkách zveřejnili první část
+                  rozhovorů zaměřených na trendy ve sportu, o který se začalo
+                  mluvit v souvislosti s OH v Paříži. Na otázky nám odpověděli
+                  Ondřej Šebek, předseda NSA, Jiří Kejval, předseda ČOV a Michal
+                  Kur rst, předseda ČVS.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="#" class="post">
+              <div class="post__img">
+                <img
+                  src=" images/content/post-2.png"
+                  loading="lazy"
+                  alt="post-1"
+                />
+              </div>
+              <div class="post__content">
+                <div class="mb-4 tags">
+                  <div class="tag tag-red">Beach</div>
+                  <ul class="tags__list">
+                    <li>10. 10. 2024</li>
+                  </ul>
+                </div>
+                <h4 class="h3">MČR družstev má své vítěze</h4>
+                <p>
+                  Minulý týden jsme na našich stránkách zveřejnili první část
+                  rozhovorů zaměřených na trendy ve sportu, o který se začalo
+                  mluvit v souvislosti s OH v Paříži. Na otázky nám odpověděli
+                  Ondřej Šebek, předseda NSA, Jiří Kejval, předseda ČOV a Michal
+                  Kur rst, předseda ČVS.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="#" class="post">
+              <div class="post__img">
+                <img
+                  src=" images/content/post-2.png"
+                  loading="lazy"
+                  alt="post-1"
+                />
+              </div>
+              <div class="post__content">
+                <div class="mb-4 tags">
+                  <div class="tag tag-red">Beach</div>
+                  <ul class="tags__list">
+                    <li>10. 10. 2024</li>
+                  </ul>
+                </div>
+                <h4 class="h3">MČR družstev má své vítěze</h4>
+                <p>
+                  Minulý týden jsme na našich stránkách zveřejnili první část
+                  rozhovorů zaměřených na trendy ve sportu, o který se začalo
+                  mluvit v souvislosti s OH v Paříži. Na otázky nám odpověděli
+                  Ondřej Šebek, předseda NSA, Jiří Kejval, předseda ČOV a Michal
+                  Kur rst, předseda ČVS.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="#" class="post">
+              <div class="post__img">
+                <img
+                  src=" images/content/post-2.png"
+                  loading="lazy"
+                  alt="post-1"
+                />
+              </div>
+              <div class="post__content">
+                <div class="mb-4 tags">
+                  <div class="tag tag-red">Beach</div>
+                  <ul class="tags__list">
+                    <li>10. 10. 2024</li>
+                  </ul>
+                </div>
+                <h4 class="h3">MČR družstev má své vítěze</h4>
+                <p>
+                  Minulý týden jsme na našich stránkách zveřejnili první část
+                  rozhovorů zaměřených na trendy ve sportu, o který se začalo
+                  mluvit v souvislosti s OH v Paříži. Na otázky nám odpověděli
+                  Ondřej Šebek, předseda NSA, Jiří Kejval, předseda ČOV a Michal
+                  Kur rst, předseda ČVS.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="#" class="btn btn-arrow mx-auto"> Starší články </a>
+      </div>
+    </div>
+
+    {% include "@components/sportsmen-section/sportsmen-section.twig" %} {%
+    include "@components/partnersSlider/partnersSlider.twig" %} {% include
+    "@components/topstory-section/topstory-section-footer.twig" %}
+  </main>
+  {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}

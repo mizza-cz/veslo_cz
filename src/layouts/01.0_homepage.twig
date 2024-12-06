@@ -1,0 +1,19 @@
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %}
+<div class="base">
+  {% include "@components/header/header.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    <div class="mb-9">
+      {% include "@components/topstory-section/topstory-section.twig" %} {%
+      include "@components/hp-sports/hp-sports.twig" %}
+    </div>
+    {%
+      include "@components/hp-posts/hp-posts.twig" %}
+    {% include "@components/sportsmen-section/sportsmen-section.twig" %}
+    {% include "@components/partnersSlider/partnersSlider.twig" %} {% include
+    "@components/topstory-section/topstory-section-footer.twig" %}
+  </main>
+  {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}

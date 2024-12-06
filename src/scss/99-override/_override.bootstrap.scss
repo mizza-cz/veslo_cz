@@ -1,0 +1,59 @@
+/*! purgecss start ignore */
+.container {
+  padding: 0 16px !important;
+  max-width: 81.6rem !important;
+}
+.g-8 {
+  --bs-gutter-y: 64px;
+  --bs-gutter-x: 64px;
+  @include media-breakpoint-down(lg) {
+    --bs-gutter-y: 32px;
+    --bs-gutter-x: 32px;
+  }
+}
+.g-1 {
+  --bs-gutter-y: 8px;
+  --bs-gutter-x: 8px;
+}
+.text-dark-72 {
+  color: var(--color-dark-72);
+}
+.text-light-72 {
+  color: var(--color-light-72);
+}
+.text-light-50 {
+  color: var(--color-light-50);
+}
+.text-dark-50 {
+  color: var(--color-dark-50);
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-8 {
+  margin-bottom: 64px;
+}
+.mb-7 {
+  margin-bottom: 48px;
+}
+.mb-9 {
+  margin-bottom: 104px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 64px;
+  }
+}
+.mt-9 {
+  margin-top: 104px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 64px;
+  }
+}
+.mt-5 {
+  margin-top: 32px !important;
+}
+.mb-5 {
+  margin-bottom: 32px !important;
+}
+
+/*! purgecss end ignore */
+ 
