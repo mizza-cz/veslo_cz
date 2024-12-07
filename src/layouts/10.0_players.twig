@@ -1,0 +1,36 @@
+{% extends "@components/base/base.twig" %} {% set title = "10.0_players" %} {%
+block main %}
+<div class="base">
+  {% include "@components/header/header-default.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    <section class="static-section">
+      <div class="container">
+        <h1 class="h2 fw-light mb-lg-4 mb-3">Veslaři</h1>
+        <div class="filterBox">
+          <form class="filterBox__search">
+            <button>
+              <img src="images/ico/search.svg" alt="search" />
+            </button>
+            <input
+              type="text"
+              placeholder="Vyhledejte podle kraje, reference nebo názvu"
+            />
+          </form>
+
+          <label class="o-select boxFilter__label">
+            <select class="js-select">
+              <option>Disciplína (Vše)</option>
+              <option>Veslování</option>
+              <option>Hala</option>
+              <option>Beach</option>
+            </select>
+          </label>
+        </div>
+        {% include "@components/players/players.twig" %}
+      </div>
+    </section>
+  </main>
+  {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}
