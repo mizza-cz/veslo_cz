@@ -1,0 +1,11 @@
+.gallery {
+  .post__img {
+    aspect-ratio: 288/200;
+  }
+  .post__content {
+    padding-bottom: 24px;
+    .h3 {
+      margin-bottom: 0;
+    }
+  }
+}

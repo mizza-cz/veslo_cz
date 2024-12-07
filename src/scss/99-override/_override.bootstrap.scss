@@ -57,5 +57,17 @@
 .mb-5 {
   margin-bottom: 32px !important;
 }
+.mt-6 {
+  margin-top: 40px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 32px;
+  }
+}
+.mb-6 {
+  margin-bottom: 40px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 32px;
+  }
+}
 
 /*! purgecss end ignore */

@@ -1,0 +1,53 @@
+{% extends "@components/base/base.twig" %} {% set title = "08.0_archive" %} {%
+block main %}
+<div class="base">
+  {% include "@components/header/header-default.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    <section class="static-section">
+      <div class="container">
+        <h1 class="h2 fw-light mb-lg-4 mb-3">Archiv článků</h1>
+        <div class="filterBox">
+          <form class="filterBox__search">
+            <button>
+              <img src="images/ico/search.svg" alt="search" />
+            </button>
+            <input
+              type="text"
+              placeholder="Vyhledejte podle kraje, reference nebo názvu"
+            />
+          </form>
+          <label class="o-select boxFilter__label">
+            <select class="js-select">
+              <option>Kategorie</option>
+              <option>Aktuální zprávy</option>
+              <option>Rozhovory</option>
+              <option>Reportáže</option>
+              <option>Mládež</option>
+              <option>Tiskové zprávy</option>
+              <option>Soutěže a akce pro fanoušky</option>
+              <option>Preview k zápasu</option>
+              <option>Ohlasy po utkání</option>
+              <option>Sledge – článek</option>
+              <option>Sledge – reportáž</option>
+              <option>Historie</option>
+              <option>Fan Club</option>
+            </select>
+          </label>
+          <label class="o-select boxFilter__label">
+            <select class="js-select">
+              <option>Rok</option>
+              <option>2024</option>
+              <option>2023</option>
+              <option>2022</option>
+              <option>2021</option>
+            </select>
+          </label>
+        </div>
+        {% include "@components/archive/archive.twig" %}
+      </div>
+    </section>
+  </main>
+  {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}
