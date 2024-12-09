@@ -12,12 +12,7 @@
   &__content {
     flex: 1;
   }
-  &__head {
-    margin-bottom: 56px;
-    @include media-breakpoint-down(lg) {
-      margin-bottom: 40px;
-    }
-  }
+
   &__img {
     width: 100%;
     aspect-ratio: 1440/536;

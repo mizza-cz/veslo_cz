@@ -23,6 +23,12 @@
       margin: 40px 0;
     }
   }
+  .perex {
+    margin-bottom: 56px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+  }
 }
 .h1,
 .o-content h1 {
@@ -66,6 +72,16 @@
   @include media-breakpoint-down(lg) {
     font-size: 22px;
     line-height: 26px;
+  }
+}
+.h4,
+.o-content h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
