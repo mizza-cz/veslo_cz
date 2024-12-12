@@ -44,6 +44,12 @@
     display: flex;
     flex-direction: column;
     gap: 16px 0;
+    a {
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
     span {
       display: block;
       color: var(--color-light-50);

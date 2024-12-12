@@ -11,6 +11,7 @@
     @include media-breakpoint-down(xl) {
       max-width: 100%;
       flex: 100%;
+      padding: 0 24px;
     }
   }
 }
@@ -83,4 +84,3 @@
     }
   }
 }
- 

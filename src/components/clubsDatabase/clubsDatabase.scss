@@ -26,24 +26,24 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px 12px;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 4px 2px 16px 0px rgba(0, 0, 0, 0.12);
+    }
     @include media-breakpoint-down(md) {
       flex-direction: column;
-      justify-content: center;
-      text-align: center;
+      align-items: flex-start;
     }
     p {
       font-size: 14px;
       line-height: 16px;
     }
-    a {
+    &-team {
       display: flex;
       align-items: center;
       font-weight: 700;
       gap: 20px;
-      text-decoration-color: transparent;
-      &:hover {
-        text-decoration-color: inherit;
-      }
       img {
         width: 24px;
         height: 24px;
