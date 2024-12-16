@@ -1,0 +1,21 @@
+.representation-section {
+  .clubsDatabase__head span:first-child {
+    width: 100%;
+  }
+  .clubsDatabase__head span {
+    min-width: 160px;
+  }
+  .clubsDatabase__head {
+    gap: 12px 40px;
+  }
+  .clubsDatabase__item-team {
+    width: 100%;
+  }
+  .clubsDatabase__item p {
+    min-width: 160px;
+  }
+  .clubsDatabase__item {
+    flex-wrap: nowrap;
+    gap: 12px 40px;
+  }
+}
