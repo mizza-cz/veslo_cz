@@ -6,12 +6,10 @@
   &__item {
     width: 100%;
     aspect-ratio: 1440/600;
-    @include media-breakpoint-only(sm) {
+    @include media-breakpoint-down(md) {
       aspect-ratio: 1440/740;
     }
-    @include media-breakpoint-down(sm) {
-      aspect-ratio: 475/420;
-    }
+
     position: relative;
     display: block !important;
     &::before {
