@@ -39,7 +39,9 @@
     margin: 40px auto;
   }
 }
-
+.photosBox__item {
+  display: block;
+}
 .photosBox__item img {
   display: block;
   width: 100%;

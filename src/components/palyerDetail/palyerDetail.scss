@@ -34,6 +34,7 @@
     margin: 0 auto;
     bottom: 0;
     transform: translateY(50%);
+    overflow: hidden;
     @include media-breakpoint-down(lg) {
       width: 260px;
       height: 260px;
