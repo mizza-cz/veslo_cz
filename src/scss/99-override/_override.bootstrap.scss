@@ -36,6 +36,12 @@
 .mt-8 {
   margin-top: 64px;
 }
+.pt-8 {
+  padding-top: 64px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 40px;
+  }
+}
 .mb-7 {
   margin-bottom: 48px;
 }
@@ -68,6 +74,9 @@
   @include media-breakpoint-down(lg) {
     margin-bottom: 32px;
   }
+}
+.pt-6 {
+  padding-top: 40px;
 }
 .bg-transparent {
   background: transparent !important;

@@ -3,7 +3,10 @@ block main %}
 <div class="base">
   {% include "@components/header/header-default.twig" %}
   <main class="main" aria-label="Hlavní obsah">
-    <section class="static-section">
+    <section class="static-section pt-0">
+      <div class="article-section__img">
+        <img src="images/content/topAritcle.png" loading="lazy" alt="article" />
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-xl-8 col-lg-9 col-md-10 mx-auto">
@@ -185,4 +188,3 @@ block main %}
 </div>
 
 {% endblock %}
- 
