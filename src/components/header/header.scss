@@ -65,25 +65,116 @@
     display: flex;
     align-items: center;
     margin-right: -12px;
-    li {
-      padding: 0 12px;
-    }
-    a {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 19.2px;
-      text-transform: uppercase;
-      text-decoration-color: transparent;
-      &:hover {
-        text-decoration-color: inherit;
-      }
-    }
   }
 }
 
 .header.fade-in {
+  .header__nav-item > ul {
+    top: 10px;
+  }
   .header__logo {
     max-width: 16rem;
     height: 3rem;
   }
+}
+
+.header__nav-item {
+  position: relative;
+  padding: 0 12px;
+  align-content: end;
+  padding-bottom: 4px;
+}
+.header__nav-link {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-transform: uppercase;
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
+
+/* Top-level */
+.header__nav > .header__nav-list > li > a {
+  display: inline-block;
+  color: var(--color-dark);
+  background: transparent;
+  transition: background var(--transition-timing)
+      var(--transition-timing-function),
+    color var(--transition-timing) var(--transition-timing-function);
+}
+
+/* Nested */
+.header__nav-list ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+  width: 14rem;
+  box-shadow: 0 0.25rem 1.5rem hsla(200, 19%, 18%, 0.05);
+  transition: visibility 0s var(--transition-timing-function)
+      var(--transition-timing),
+    opacity var(--transition-timing) var(--transition-timing-function);
+}
+
+.header__nav-list ul a {
+  color: var(--color-light);
+  transition: background var(--transition-timing)
+      var(--transition-timing-function),
+    color var(--transition-timing) var(--transition-timing-function);
+}
+
+.header__nav-item > ul {
+  top: 20px;
+  border-top: 30px solid transparent;
+
+  a {
+    background-color: var(--color-blue-light);
+    display: block;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    text-decoration: none;
+    &:hover {
+      background-color: var(--color-blue);
+    }
+  }
+}
+.header__nav-item li ul {
+  left: 100%;
+}
+.header__nav li {
+  position: relative;
+}
+
+/* 
+  HACK: Prevents box shadow from child dropdowns
+  from overlapping its parent dropdown
+*/
+.header__nav li.has-children > a {
+  position: relative;
+}
+
+.header__nav li.has-children > a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1rem;
+  background: inherit;
+  z-index: 999;
+}
+/* ENDHACK */
+
+.header__nav li:hover > ul,
+.header__nav li:focus-within > ul /* IE11+ only */ {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }

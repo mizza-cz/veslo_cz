@@ -40,23 +40,40 @@
 					<div class="header__row">
 						<nav class="header__nav">
 							<ul class="header__nav-list">
-								<li>
-									<a href="#">O veslování</a>
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="#">O veslování</a>
 								</li>
-								<li>
-									<a href="#">Závody</a>
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="#">Závody</a>
 								</li>
-								<li>
-									<a href="#">Fotogalerie</a>
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="#">Fotogalerie</a>
 								</li>
-								<li>
-									<a href="#">ČVS</a>
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="#">ČVS</a>
 								</li>
-								<li>
-									<a href="#">Trénink</a>
+								<li class="header__nav-item">
+									<a class="header__nav-link" href="#">Trénink</a>
 								</li>
-								<li>
-									<a href="#">Mládež</a>
+								<li class="header__nav-item has-children">
+									<a class="header__nav-link" href="#" aria-haspopup="true">Mládež</a>
+									<ul aria-label="submenu">
+										<li><a href="#!"> item 1</a></li>
+										<li><a href="#!"> item 2</a></li>
+										<li><a href="#!"> item 3</a></li>
+										<li class="has-children">
+											<a href="#!" aria-haspopup="true">Multi level -></a>
+											<ul aria-label="submenu">
+												<li><a href="#!">Multi level 1</a></li>
+												<li><a href="#!">Multi level 1</a></li>
+												<li><a href="#!">Multi level 1</a></li>
+												<li><a href="#!">Multi level 1</a></li>
+
+												<li><a href="#!">Multi level 1</a></li>
+												<li><a href="#!">Multi level 1</a></li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
 						</nav>
@@ -292,20 +309,20 @@
 									odchází z textu s radostí. Nenavádíme vás k tomu, abyste tyto
 									metriky okamžitě přestali řešit. Jen jejich význam moc nepřeceňujte.
 								</p>
-								<div class="photosBox">
-									<a href="#" data-source="/veslo_cz/build/ajax-gallery.json" data-gallery-id="3" class="photosBox__item">
+								<div class="photosBox" id="photosBox">
+									<a data-fslightbox="gallery" href="images/content/photo-1.png" class="photosBox__item">
 										<img src="images/content/photo-1.png" loading="lazy" alt="photo" />
 									</a>
-									<a href="#" data-source="/veslo_cz/build/ajax-gallery.json" data-gallery-id="3" class="photosBox__item">
+									<a data-fslightbox="gallery" href="images/content/photo-2.png" class="photosBox__item">
 										<img src="images/content/photo-2.png" loading="lazy" alt="photo" />
 									</a>
-									<a href="#" data-source="/veslo_cz/build/ajax-gallery.json" data-gallery-id="3" class="photosBox__item">
+									<a data-fslightbox="gallery" href="images/content/photo-3.png" class="photosBox__item">
 										<img src="images/content/photo-3.png" loading="lazy" alt="photo" />
 									</a>
-									<a href="#" data-source="/veslo_cz/build/ajax-gallery.json" data-gallery-id="3" class="photosBox__item">
+									<a data-fslightbox="gallery" href="images/content/photo-4.png" class="photosBox__item">
 										<img src="images/content/photo-4.png" loading="lazy" alt="photo" />
 									</a>
-									<a href="#" data-source="/veslo_cz/build/ajax-gallery.json" data-gallery-id="3" class="photosBox__item">
+									<a data-fslightbox="gallery" href="images/content/photo-5.png" class="photosBox__item">
 										<img src="images/content/photo-5.png" loading="lazy" alt="photo" />
 									</a>
 								</div>
