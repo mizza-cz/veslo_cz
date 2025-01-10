@@ -6,8 +6,8 @@ block main %}
     <section class="static-section">
       <div class="container">
         <h1 class="h2 fw-light mb-lg-4 mb-3">Fotogalerie</h1>
-        <div class="filterBox">
-          <form class="filterBox__search">
+        <form class="filterBox">
+          <div class="filterBox__search">
             <button>
               <img src="images/ico/search.svg" alt="search" />
             </button>
@@ -15,7 +15,7 @@ block main %}
               type="text"
               placeholder="Vyhledejte podle kraje, reference nebo názvu"
             />
-          </form>
+          </div>
           <label class="o-select boxFilter__label">
             <select class="js-select">
               <option>Kategorie</option>
@@ -42,7 +42,8 @@ block main %}
               <option>2021</option>
             </select>
           </label>
-        </div>
+          <button class="tag tag-lightBlue">vyhledat</button>
+        </form>
         {% include "@components/gallery/gallery.twig" %}
         
       </div>

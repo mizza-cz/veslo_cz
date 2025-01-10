@@ -57,7 +57,7 @@
     }
   }
   .header__nav {
-    @include media-breakpoint-down(xl) {
+    @media (max-width: 1280px) {
       display: none;
     }
   }

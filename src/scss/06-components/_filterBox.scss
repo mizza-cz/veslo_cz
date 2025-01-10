@@ -48,4 +48,12 @@
       }
     }
   }
+  button.tag {
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    &:hover {
+      background-color: var(--color-blue);
+    }
+  }
 }
