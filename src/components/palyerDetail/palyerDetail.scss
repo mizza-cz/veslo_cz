@@ -57,6 +57,9 @@
     @include media-breakpoint-down(lg) {
       margin-bottom: 64px;
     }
+    .btn.btn-arrow {
+      margin-right: 64px !important;
+    }
   }
 
   &__info {
