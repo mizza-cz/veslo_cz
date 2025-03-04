@@ -1,4 +1,14 @@
 .playerDetail {
+  &__aside {
+    @include media-breakpoint-down(lg) {
+      max-width: fit-content;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: start;
+      flex-direction: column;
+    }
+  }
   .h1 {
     margin-bottom: 40px;
   }
@@ -58,7 +68,9 @@
       margin-bottom: 64px;
     }
     .btn.btn-arrow {
-      margin-right: 64px !important;
+      margin-left: -24px;
+      @include media-breakpoint-down(lg) {
+      }
     }
   }
 
