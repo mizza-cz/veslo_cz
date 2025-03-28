@@ -1,10 +1,7 @@
 window.cookieConsentSettings = {
   current_lang: "cs",
   autoclear_cookies: true, // default: false
-  theme_css: "../css/cookie-consent.min.css",
-  theme_css: isLocalhost
-    ? "../css/cookie-consent.min.css"
-    : "/build/css/cookie-consent.min.css",
+  theme_css: "css/cookie-consent.css", // 🚨 replace with a valid path
   page_scripts: true, // default: false
   languages: {
     cs: {
@@ -117,9 +114,7 @@ document
     '[data-src][data-cookiecategory="social"][data-placeholder]'
   )
   .forEach(function (el) {
-    el.src = isLocalhost
-      ? "./cookie-consent-frame.html"
-      : "/dist/cookie-consent-frame.html";
+    el.src = "/inc/cookie-consent-frame.html";
   });
 
 document.querySelectorAll("[data-cookie-placeholder]").forEach(function (el) {
