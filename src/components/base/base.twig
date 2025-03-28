@@ -10,20 +10,34 @@
     <meta name="format-detection" content="telephone=no" />
 
     <!--****** Favicon ******-->
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
     <link rel="manifest" href="favicon/site.webmanifest" />
     <!--****** Fonts ******-->
     <link rel="stylesheet" href="https://use.typekit.net/isb8hgn.css" />
     <!--****** Styles  ******-->
+    <link rel="stylesheet" href="css/cookie-consent-config.css" />
+    <link rel="stylesheet" href="css/cookie-consent.min.css" />
     <link rel="preload" href="css/styles.css" as="style" />
     <link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
     <link rel="stylesheet" media="print" href="css/prints.css" />
     <!--****** Styles  ******-->
 
     <!--****** Scripts  ******-->
+    <script>
+      const isLocalhost = window.location.hostname.includes("localhost");
+    </script>
     <link
       rel="preload"
       href="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -36,6 +50,7 @@
       as="script"
       crossorigin
     />
+    <script src="js/cookie-consent.min.js" defer="defer"></script>
     <link rel="preload" href="js/scripts.js" as="script" />
     <!-- ****** scripts ****** -->
   </head>
