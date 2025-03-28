@@ -1,7 +1,7 @@
 window.cookieConsentSettings = {
   current_lang: "cs",
   autoclear_cookies: true, // default: false
-  theme_css: "./css/cookie-consent.min.css",
+  theme_css: "../css/cookie-consent.min.css",
   theme_css: isLocalhost
     ? "../css/cookie-consent.min.css"
     : "/build/css/cookie-consent.min.css",
