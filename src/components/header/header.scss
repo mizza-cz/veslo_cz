@@ -55,6 +55,18 @@
     @include media-breakpoint-down(xxl) {
       gap: 40px;
     }
+    .tags {
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+    .tag {
+      border-radius: 4px;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
   }
   .header__nav {
     @media (max-width: 1280px) {
