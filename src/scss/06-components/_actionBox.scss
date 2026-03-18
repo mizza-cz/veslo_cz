@@ -1,7 +1,8 @@
 .actionBox {
   border-radius: 12px;
   background-color: var(--color-light);
-  box-shadow: 0px 1px 2px 0px rgba(41, 72, 123, 0.1);
+  // box-shadow: 0px 1px 2px 0px rgba(41, 72, 123, 0.1);
+  box-shadow: var(--shadow-dark-12);
   padding: 24px;
   height: 100%;
   .btn {
