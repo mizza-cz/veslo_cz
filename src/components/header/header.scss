@@ -53,7 +53,7 @@
     gap: 56px;
     align-items: flex-end;
     @include media-breakpoint-down(xxl) {
-      gap: 40px;
+      gap: 1.5rem;
     }
     .tags {
       @include media-breakpoint-down(lg) {
