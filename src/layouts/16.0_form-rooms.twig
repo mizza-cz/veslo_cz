@@ -1,0 +1,20 @@
+{% extends "@components/base/base.twig" %} {% set title = "16.0_form-rooms" %}
+{% block main %}
+<div class="base">
+  {% include "@components/header/header-default.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    <section class="static-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 col-lg-9 col-md-10 mx-auto">
+            <h1 class="h1 fw-light mb-lg-4 mb-3">Fomulář pokoje</h1>
+            {% include "@components/formRooms/formRooms.twig" %}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %}

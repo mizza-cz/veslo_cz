@@ -1,0 +1,53 @@
+<form class="formRooms">
+  <div class="form-group">
+    <label>Pokoj</label>
+
+    <div class="formRooms-options">
+      <label class="formRooms-option">
+        <input type="radio" name="room" value="pokoj-9" required />
+        <span>
+          <strong>Pokoj číslo 9</strong>
+          <small>2 místa, 1.–2. května</small>
+        </span>
+      </label>
+
+      <label class="formRooms-option">
+        <input type="radio" name="room" value="pokoj-12" />
+        <span>
+          <strong>Pokoj číslo 12</strong>
+          <small>3 místa, 1.–3. května</small>
+        </span>
+      </label>
+
+      <label class="formRooms-option">
+        <input type="radio" name="room" value="pokoj-18" />
+        <span>
+          <strong>Pokoj číslo 18</strong>
+          <small>1 místo, 2.–4. května</small>
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="fullname">Jméno a příjmení</label>
+    <input id="fullname" type="text" name="fullname" required />
+  </div>
+
+  <div class="form-group">
+    <label for="club">Klub</label>
+    <input id="club" type="text" name="club" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">E-mail</label>
+    <input id="email" type="email" name="email" required />
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Telefon</label>
+    <input id="phone" type="tel" name="phone" required />
+  </div>
+
+  <button type="submit">Odeslat</button>
+</form>

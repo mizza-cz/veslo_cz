@@ -1,0 +1,136 @@
+.formRooms {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group > label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-left: 4px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    height: 54px;
+    padding: 0 16px;
+    border: 2px solid var(--color-dark-12);
+    border-radius: 12px;
+    font-size: 16px;
+    transition: 0.2s ease;
+    background: var(--color-light);
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus {
+    outline: none;
+    border-color: var(--color-dark-50);
+    box-shadow: var(--shadow-dark-12);
+  }
+}
+
+/* ROOMS */
+
+.formRooms-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formRooms-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 22px 24px;
+  border: 2px solid var(--color-dark-12);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  background: var(--color-light);
+}
+
+.formRooms-option:hover {
+  border-color: var(--color-dark-50);
+  box-shadow: var(--shadow-dark-12);
+  transform: translateY(-1px);
+}
+
+.formRooms-option input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border: 3px solid #cfcfcf;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.formRooms-option input[type="radio"]::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-dark-72);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease;
+}
+
+.formRooms-option input[type="radio"]:checked {
+  border-color: var(--color-dark-72);
+}
+
+.formRooms-option input[type="radio"]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.formRooms-option:has(input:checked) {
+  border-color: var(--color-dark-50);
+  background: #f8f8f8;
+}
+
+.formRooms-option span {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRooms-option strong {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.formRooms-option small {
+  margin-top: 6px;
+  font-size: 16px;
+  color: var(--color-dark-50);
+}
+
+/* BUTTON */
+
+.formRooms button {
+  height: 54px;
+  border: none;
+  border-radius: 12px;
+  background: var(--color-dark);
+  color: var(--color-light);
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.formRooms button:hover {
+  opacity: 0.9;
+}
