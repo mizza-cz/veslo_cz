@@ -1,0 +1,74 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"17.0_list-of-advertisements" %} {% block main %}
+<div class="base">
+  {% include "@components/header/header-default.twig" %}
+  <main class="main" aria-label="Hlavní obsah">
+    <section class="static-section">
+      <div class="container">
+        <h1 class="h1 fw-light mb-lg-4 mb-3">Bazar</h1>
+        <div class="row g-4">
+          {% for i in 1..8 %}
+          <div class="col-lg-4 col-md-6">
+            {% include "@components/advertisementItem/advertisementItem.twig" %}
+          </div>
+          {% endfor %}
+        </div>
+        <nav aria-label="Další stránky">
+          <ul
+            class="pagination d-flex flex-wrap pagination-flat pagination-success"
+          >
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 13L1 7l6-6"
+                    stroke="#fff"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1l6 6-6 6"
+                    stroke="#fff"
+                    stroke-linecap="square"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </main>
+  {% include "@components/footer/footer.twig" %}
+</div>
+
+{% endblock %} advertisements
