@@ -5,7 +5,12 @@
   <main class="main" aria-label="Hlavní obsah">
     <section class="static-section">
       <div class="container">
-        <h1 class="h1 fw-light mb-lg-4 mb-3">Bazar</h1>
+        <div
+          class="d-flex mb-3 mb-lg-4 align-items-center justify-content-between flex-wrap gap-3"
+        >
+          <h1 class="h1 fw-light">Bazar</h1>
+          <a href="#" class="btn btn-arrow">Přidej inzerát</a>
+        </div>
         <div class="row g-4">
           {% for i in 1..8 %}
           <div class="col-lg-4 col-md-6">

@@ -1,0 +1,102 @@
+<form
+  class="formAdvertisement"
+  action="#"
+  method="post"
+  enctype="multipart/form-data"
+>
+  <div class="form-group">
+    <label for="advertisementPhoto">Fotka</label>
+
+    <div class="formAdvertisement-upload">
+      <label class="formAdvertisement-upload__label" for="advertisementPhoto">
+        <span class="formAdvertisement-upload__icon">
+          <span class="formAdvertisement-upload__plus">+</span>
+          <img
+            class="formAdvertisement-upload__image"
+            alt="Náhled fotografie"
+            hidden
+          />
+        </span>
+
+        <span class="formAdvertisement-upload__text"> Vybrat fotografii </span>
+      </label>
+
+      <input
+        id="advertisementPhoto"
+        class="formAdvertisement-upload__input"
+        type="file"
+        name="photo"
+        accept="image/jpeg,image/png,image/webp"
+        required
+      />
+
+      <button type="button" class="formAdvertisement-upload__remove" hidden>
+        Odebrat fotografii
+      </button>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="advertisementTitle">Název</label>
+    <input id="advertisementTitle" type="text" name="title" required />
+  </div>
+
+  <div class="form-group">
+    <label for="advertisementPrice">Cena</label>
+    <input
+      id="advertisementPrice"
+      type="number"
+      name="price"
+      min="0"
+      step="1"
+      placeholder="Cena v Kč"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="advertisementDescription">Popis</label>
+    <textarea
+      id="advertisementDescription"
+      name="description"
+      rows="6"
+      required
+    ></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="advertisementName">Jméno inzerenta</label>
+    <input
+      id="advertisementName"
+      type="text"
+      name="advertiser_name"
+      autocomplete="name"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="advertisementEmail">E-mail inzerenta</label>
+    <input
+      id="advertisementEmail"
+      type="email"
+      name="advertiser_email"
+      autocomplete="email"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="advertisementPhone"> Telefon inzerenta </label>
+
+    <input
+      id="advertisementPhone"
+      type="tel"
+      name="advertiser_phone"
+      autocomplete="tel"
+    />
+  </div>
+
+  <button class="formAdvertisement__submit" type="submit">
+    Vložit inzerát
+  </button>
+</form>

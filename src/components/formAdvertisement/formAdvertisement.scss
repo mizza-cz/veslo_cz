@@ -1,0 +1,162 @@
+.formAdvertisement {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+
+    > label {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      margin-left: 4px;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 0 16px;
+    border: 2px solid var(--color-dark-12);
+    border-radius: 12px;
+    font-size: 16px;
+    background: var(--color-light);
+    transition: 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-dark-50);
+      box-shadow: var(--shadow-dark-12);
+    }
+
+    &::placeholder {
+      color: var(--color-dark-50);
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"] {
+    height: 54px;
+  }
+
+  textarea {
+    min-height: 160px;
+    padding: 16px;
+    resize: vertical;
+    line-height: 1.5;
+  }
+
+  &-optional {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-dark-50);
+  }
+
+  &__submit {
+    width: 100%;
+    height: 54px;
+    border: none;
+    border-radius: 12px;
+    background: var(--color-dark);
+    color: var(--color-light);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.formAdvertisement-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  &__icon {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    border: 2px solid var(--color-dark-12);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--color-light);
+    transition: 0.2s ease;
+  }
+
+  &__label:hover &__icon {
+    border-color: var(--color-dark-50);
+  }
+
+  &__plus {
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--color-dark-72);
+    line-height: 1;
+  }
+
+  &__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-dark);
+  }
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  &__remove {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--color-dark-50);
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &[hidden] {
+      display: none;
+    }
+
+    &:hover {
+      color: var(--color-dark);
+    }
+  }
+}
