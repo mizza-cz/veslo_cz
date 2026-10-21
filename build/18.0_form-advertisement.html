@@ -290,25 +290,29 @@
 
 							<form class="formAdvertisement" action="#" method="post" enctype="multipart/form-data">
 								<div class="form-group">
-									<label for="advertisementPhoto">Fotka</label>
+									<label for="advertisementPhotos">Fotky</label>
 
 									<div class="formAdvertisement-upload">
-										<label class="formAdvertisement-upload__label" for="advertisementPhoto">
-											<span class="formAdvertisement-upload__icon">
+										<div class="formAdvertisement-upload__grid js-advertisement-photos">
+											<label class="formAdvertisement-upload__add">
 												<span class="formAdvertisement-upload__plus">+</span>
-												<img class="formAdvertisement-upload__image" alt="Náhled fotografie" hidden />
+												<span class="formAdvertisement-upload__addText"> Přidat fotky </span>
+
+												<input id="advertisementPhotos" class="formAdvertisement-upload__input" type="file" name="photos[]" accept="image/jpeg,image/png,image/webp" multiple required />
+											</label>
+										</div>
+
+										<div class="formAdvertisement-upload__bottom">
+											<span class="formAdvertisement-upload__count">
+												Nahráno 0 fotografií
 											</span>
-
-											<span class="formAdvertisement-upload__text"> Vybrat fotografii </span>
-										</label>
-
-										<input id="advertisementPhoto" class="formAdvertisement-upload__input" type="file" name="photo" accept="image/jpeg,image/png,image/webp" required />
-
-										<button type="button" class="formAdvertisement-upload__remove" hidden>
-											Odebrat fotografii
-										</button>
+											<span class="formAdvertisement-upload__hint">
+												Podporované formáty: JPG, PNG, WebP
+											</span>
+										</div>
 									</div>
 								</div>
+
 								<div class="form-group">
 									<label for="advertisementTitle">Název</label>
 									<input id="advertisementTitle" type="text" name="title" required />
